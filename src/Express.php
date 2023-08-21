@@ -32,8 +32,8 @@ class Express
             throw new InvalidArgumentException('APP key Can not be empty');
         }
 
-        if (!in_array(strtolower($type), ['Kuaidi100Express', 'KuaidiBirdExpress'])) {
-            throw new InvalidArgumentException('Unsupported Type');
+        if (!in_array($type, ['Kuaidi100Express', 'KuaidiBirdExpress'])) {
+            throw new InvalidArgumentException('Unsupported Type1');
         }
 
         $this->type = $type;
