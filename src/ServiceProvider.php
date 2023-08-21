@@ -4,7 +4,7 @@ namespace Lzy\Express;
 
 use Lzy\Express\Express;
 
-class ServiceExpress extends \Illuminate\Support\ServiceProvider
+class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     protected $defer = true;
 
