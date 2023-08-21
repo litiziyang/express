@@ -22,7 +22,7 @@ class Express
      *
      * @throws InvalidArgumentException
      */
-    public function __construct($app_id, $app_key, $type = 'Kuaidi100Express')
+    public function __construct($app_id, $app_key, string $type = 'Kuaidi100Express')
     {
         if (empty($app_id)) {
             throw new InvalidArgumentException('APP Id Can not be empty');
@@ -32,7 +32,7 @@ class Express
             throw new InvalidArgumentException('APP key Can not be empty');
         }
 
-        if (!in_array(strtolower($type), ['Kuaidi100Express', 'kuaidiBirdExpress'])) {
+        if (!in_array(strtolower($type), ['Kuaidi100Express', 'KuaidiBirdExpress'])) {
             throw new InvalidArgumentException('Unsupported Type');
         }
 
@@ -66,7 +66,7 @@ class Express
             return $express->query($tracking_code, $shipping_code, $phone);
         }
 
-        if ('kuaidiBirdExpress' === $this->type) {
+        if ('KuaidiBirdExpress' === $this->type) {
             $express = new KuaidiBirdExpress($this->app_id, $this->app_key);
             return $express->query($tracking_code, $shipping_code);
         }
