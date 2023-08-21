@@ -1,5 +1,5 @@
 {
-    "name": "lzy/express",
+    "name": "liziyang/express",
     "autoload": {
         "psr-4": {
             "Lzy\\Express\\": "src/"
