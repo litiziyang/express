@@ -67,6 +67,13 @@ $composer require liziyang\express
 
 ### 快递鸟使用方法和快递100一样
 
+```php
+    use Lzy\Express\KuaidiBirdExpress;
+
+    $express = new KuaidiBirdExpress('api_id','api_key')
+    $express->query('$tracking_code', '$shipping_code','phone')//快递单号，快递公司编码，如果是顺丰快运，顺丰速运，丰网快运需要手机号
+```
+
 ## 快递鸟返回
 
 ``` json
