@@ -1,0 +1,36 @@
+{
+    "name": "lzy/express",
+    "autoload": {
+        "psr-4": {
+            "Lzy\\Express\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "李子旸",
+            "email": "2567707642@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "^7.2"
+    }
+    ,
+    "autoload-dev": {
+        "psr-4": {
+            "Lzy\\Express\\Test\\": "test/"
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "10.4.x-dev"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lzy\\Express\\ServiceProvider"
+            ]
+        }
+    }
+}
