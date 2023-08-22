@@ -110,7 +110,7 @@ $composer require liziyang/express
     && 
     $express = app('express');
 
-    $express->track('xxxxxxxxxxx','xxxx')////快递单号，快递公司编码
+    $express->track($tracking_code, $shipping_code，$additional)////快递单号，快递公司编码,额外参数
 ```
 
 ### 在 Laravel 中使用
