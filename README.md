@@ -17,7 +17,7 @@
 ## 安装
 
 ```shell 
-$composer require liziyang\express
+$composer require liziyang/express
 ```
 
 ## 配置
