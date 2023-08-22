@@ -133,7 +133,7 @@ $composer require liziyang/express
  ```env
  EXPRESS_ID=xxxxxxxxxxxxxxxxxxxxx
  EXPRESS_KEY=xxxxxxxxxxxxxxxxxxxxx
- EXPRESS_TYPE=express100
+ EXPRESS_TYPE=Kuaidi100Express
  ```
 
 ### 注意
