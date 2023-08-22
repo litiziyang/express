@@ -30,7 +30,7 @@ $composer require liziyang/express
 ```php
     use Lzy\Express\Kuaidi100Express;
 
-    $express = new Kuaidi100('api_id','api_key')
+    $express = new Kuaidi100Express('api_id','api_key')
     $express->query('$tracking_code', '$shipping_code','phone')//快递单号，快递公司编码，如果是顺丰快运，顺丰速运，丰网快运需要手机号
 ```
 
