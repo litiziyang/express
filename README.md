@@ -106,7 +106,7 @@ $composer require liziyang/express
 ```php
     use Lzy\Express\Express;
 
-    $express = new Express($app_id,$app_key,$type); //$type支持类型'express100'、'expressbird'
+    $express = new Express($app_id,$app_key,$type); //$type支持类型'Kuaidi100Express'、'KuaidiBirdExpress'
     && 
     $express = app('express');
 
